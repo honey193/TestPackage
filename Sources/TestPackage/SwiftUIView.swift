@@ -14,7 +14,7 @@ public struct SwiftUIView: View {
     var buttonText: String?
     var buttonClick: () -> Void
     
-    init(alertMessage: String, buttonText: String, buttonClick: @escaping () -> Void) {
+    public init(alertMessage: String, buttonText: String, buttonClick: @escaping () -> Void) {
         self.buttonClick = buttonClick
         self.alertMessage = alertMessage
         self.buttonText = buttonText
